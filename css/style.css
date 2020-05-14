@@ -5,3 +5,7 @@
 #number:invalid {
     background-color: red;
 }
+
+.container{
+    padding: 0 10%;
+}
