@@ -1,3 +1,7 @@
 #email:invalid {
     background-color: red;
 }
+
+#number:invalid {
+    background-color: red;
+}
