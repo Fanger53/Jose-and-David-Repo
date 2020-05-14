@@ -15,55 +15,77 @@
 
 <body>
   <div class="container">
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <form id="survey-form" action="">
-      <label for="name" id="name-label">Name</label>
-      <br>
-      <input id="name" type="text" for="name" required placeholder="Name"></input>
-      <br>
-      <label for="number" id="email-label">Email</label>
-      <br>
-      <input type="email" name="email" id="email" required placeholder="Email">
-      <br>
-      <label for="number" id="number-label">Age</label>
-      <br>
-      <input id="number" type="number" value="null" min="1" max="120" placeholder="Age">
-      <br>
-      <label for="select">Select</label>
-      <br>
-      <select id="dropdown" type="dropdown">
-        <option value="student">student</option>
-        <option value="other">other</option>
-      </select>
-      <br>
-      <label for="group">Would you recommend freeCodeCamp to a friend?</label>
-      <br>
-      <label for="definitely">Definitely</label>
-      <input type="radio" id="definitely" name="group" value="Definitely">
-      <br>
-      <label for="definitely">Maybe</label>
-      <input type="radio" id="maybe" name="group" value="Maybe">
-      <br>
-      <label for="definitely">Not sure</label>
-      <input type="radio" id="notSure" name="group" value="Not sure">
-      <br>
-      <label for="improved">What would you like to see improved? (Check all that apply)</label>
-      <br>
-      <input type="checkbox" name="frontend" id="frontend" value="frontend">
-      <label for="frontend">Front-End Projects</label>
-      <br>
-      <input type="checkbox" name="backend" id="backend" value="backend">
-      <label for="backend">Back-End Projects</label>
-      <br>
-      <input type="checkbox" name="dv" id="dv" value="dv">
-      <label for="dv">Data Visualization</label>
-      <br>
-      <label for="mess">Any comments or suggestions?</label> <br>
-      <textarea name="suggestion" id="suggestion" cols="30" rows="10"></textarea>
-      <br>
-      <button id="submit">Submit</button>
-    </form>
+    <div class="row">
+      <div class="col-md-8 offset-md-4 ">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form" action="">
+          <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            
+            <input id="name" type="text" for="name" required placeholder="Name"></input>
+            
+          </div>
+          <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            
+            <input type="email" name="email" id="email" required placeholder="Email">
+            
+          </div>
+          <div class="form-group">
+            <label for="number" id="number-label">Age</label>
+            
+            <input id="number" type="number" value="null" min="1" max="120" placeholder="Age">
+          </div>
+            
+            <div class="form-group">
+            <label for="select">Select</label>
+            
+            <select id="dropdown" type="dropdown">
+              <option value="student">student</option>
+              <option value="other">other</option>
+            </select>
+          </div>
+            
+            <div class="form-group">
+            <label for="group">Would you recommend freeCodeCamp to a friend?</label>
+          
+           
+            <label for="definitely">Definitely</label>
+         
+            <input class="form-control" type="radio" id="definitely" name="group" value="Definitely">
+          
+            <label for="definitely">Maybe</label>
+            <input class="form-control" type="radio" id="maybe" name="group" value="Maybe">
+            
+            <label for="definitely">Not sure</label>
+            <input class="form-control" type="radio" id="notSure" name="group" value="Not sure">
+          
+            
+            <label for="improved">What would you like to see improved? (Check all that apply)</label>
+          </div>
+            
+            <div class="form-group">
+            <input type="checkbox" name="frontend" id="frontend" value="frontend">
+            <label for="frontend">Front-End Projects</label>
+            
+            <input type="checkbox" name="backend" id="backend" value="backend">
+            <label for="backend">Back-End Projects</label>
+            
+            <input type="checkbox" name="dv" id="dv" value="dv">
+            <label for="dv">Data Visualization</label>
+            
+          </div>
+          <div class="form-group"> 
+          <label for="mess">Any comments or suggestions?</label> 
+            <textarea name="suggestion" id="suggestion" cols="30" rows="10"></textarea>
+          </div> 
+            <br>
+            <button id="submit">Submit</button>
+          
+        </form>
+      </div>
+    </div>
   </div>
 
   <!-- Optional JavaScript -->
@@ -72,13 +94,13 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-  </script>
+    </script>
 </body>
 
 </html>
