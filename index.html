@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fork Me! FCC: Test Suite Template</title>
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form" action="">
-
-      <label for="name"  id="name-label">Name</label>
+      <label for="name" id="name-label">Name</label>
       <br>
-      <input id="name" type="text"  for="name" required placeholder="Name"></input>
+      <input id="name" type="text" for="name" required placeholder="Name"></input>
       <br>
-      <label for="number"  id="email-label" >Email</label>
+      <label for="number" id="email-label">Email</label>
       <br>
       <input type="email" name="email" id="email" required placeholder="Email">
       <br>
-      <label for="number"  id="number-label">Age</label>
+      <label for="number" id="number-label">Age</label>
       <br>
       <input id="number" type="number" value="null" min="1" max="120" placeholder="Age">
       <br>
       <label for="select">Select</label>
       <br>
-      <select id="dropdown" type="dropdown"> 
+      <select id="dropdown" type="dropdown">
         <option value="student">student</option>
         <option value="other">other</option>
       </select>
@@ -42,17 +48,37 @@
       <label for="definitely">Not sure</label>
       <input type="radio" id="notSure" name="group" value="Not sure">
       <br>
+      <label for="improved">What would you like to see improved? (Check all that apply)</label>
+      <br>
+      <input type="checkbox" name="frontend" id="frontend" value="frontend">
+      <label for="frontend">Front-End Projects</label>
+      <br>
+      <input type="checkbox" name="backend" id="backend" value="backend">
+      <label for="backend">Back-End Projects</label>
+      <br>
+      <input type="checkbox" name="dv" id="dv" value="dv">
+      <label for="dv">Data Visualization</label>
+      <br>
       <label for="mess">Any comments or suggestions?</label> <br>
       <textarea name="suggestion" id="suggestion" cols="30" rows="10"></textarea>
       <br>
       <button id="submit">Submit</button>
     </form>
+  </div>
 
+  <!-- Optional JavaScript -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="js/index.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</body>
 
-
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-
-    <script  src="js/index.js"></script>
-  </body>
 </html>
